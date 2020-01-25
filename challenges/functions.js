@@ -43,6 +43,7 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 
 // Explanation: 
 
+//-nestedfunction is nested within myfunction and has access to the variables within that closure, including the internal variable.
 
 const external = "I'm outside the function";
 
