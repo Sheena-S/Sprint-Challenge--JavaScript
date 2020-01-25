@@ -30,13 +30,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+forEach() allows the mutation of the original array, while map() returns a new array of the same size. map() is also faster. But it is entirely up to you to decide which one works better for you. It also depends on your use-case and codebase.
+
 2. What is the difference between a function and a method?
+
+function is a piece of code that is called by name. It can be passed data to operate on (i.e. the parameters) and can optionally return data (the return value). All data that is passed to a function is explicitly passed. A method is a piece of code that is called by a name that is associated with an object.
 
 3. What is closure?
 
+a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time. To use a closure, define a function inside another function and expose it.
+
 4. Describe the four rules of the 'this' keyword.
 
+-New Binding--Calling bind() on a function returns a new bound function. When you call this bound function, it will execute the original function with the context you passed in as the first argument. Therefore this inside foo points to obj1 when you call it through the bound function.
+
+-The explicit binding--- rule allows developers to use the "call" method and pass an explicit reference for the "this" binding. Explicit bindings can also be set using the "apply" method.
+
+-Simple Function Call---A function call is a request made by a program or script that performs a predetermined function.
+
+-Implicit binding--- mechanism creates the state associated with a binding in a manner invisible to the client. An invocation which is declared to return an interface reference actually returns a closure for a valid surrogate for the interface.
+
 5. Why do we need super() in an extended class?
+
+The super keyword in JavaScript is used in order to call the methods of the parent class. By itself, super is used within a constructor function to call the parent constructor function. 
 
 ## Project Set up
 
